@@ -26,6 +26,7 @@ namespace pry_tecing.Account
                 };
 
                 manager.SmsService.Send(message);
+                
             }
 
             Response.Redirect("/Account/VerifyPhoneNumber?PhoneNumber=" + HttpUtility.UrlEncode(PhoneNumber.Text));
